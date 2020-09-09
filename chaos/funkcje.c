@@ -6,58 +6,64 @@
 
 #include "funkcje.h"
 
+static const int width = 800;
+static const int height = 600;
+
+float scale = 3;
+SDL_Point cornerPoints[5];
 void set_points(int how_many_points_points) {
+	odstep_od_krawedzi = 50;
 	if (how_many_points_points < 2) {
 		cornerPoints[0].x = (width / 2) / scale;
 		cornerPoints[0].y = (height / 2) / scale;
 	}
 	else if (how_many_points_points == 2) {
 		cornerPoints[0].x = (width / 2) / scale;
-		cornerPoints[0].y = 50 / scale;
+		cornerPoints[0].y = odstep_od_krawedzi / scale;
 		cornerPoints[1].x = (width / 2) / scale;
-		cornerPoints[1].y = (height - 50) / scale;
+		cornerPoints[1].y = (height - odstep_od_krawedzi) / scale;
 	}
 	else if (how_many_points_points == 3) {
 		cornerPoints[0].x = (width / 2) / scale;
-		cornerPoints[0].y = 50 / scale;
-		cornerPoints[1].x = (50) / scale;
-		cornerPoints[1].y = (height - 50) / scale;
-		cornerPoints[2].x = (width - 50) / scale;
-		cornerPoints[2].y = (height - 50) / scale;
+		cornerPoints[0].y = odstep_od_krawedzi / scale;
+		cornerPoints[1].x = odstep_od_krawedzi / scale;
+		cornerPoints[1].y = (height - odstep_od_krawedzi) / scale;
+		cornerPoints[2].x = (width - odstep_od_krawedzi) / scale;
+		cornerPoints[2].y = (height - odstep_od_krawedzi) / scale;
 	}
 	else if (how_many_points_points == 4) {
-		cornerPoints[0].x = 50 / scale;
-		cornerPoints[0].y = 50 / scale;
-		cornerPoints[1].x = 50 / scale;
-		cornerPoints[1].y = (height - 50) / scale;
-		cornerPoints[2].x = (width - 50) / scale;
-		cornerPoints[2].y = 50 / scale;
-		cornerPoints[3].x = (width - 50) / scale;
-		cornerPoints[3].y = (height - 50) / scale;
+		cornerPoints[0].x = odstep_od_krawedzi / scale;
+		cornerPoints[0].y = odstep_od_krawedzi / scale;
+		cornerPoints[1].x = odstep_od_krawedzi / scale;
+		cornerPoints[1].y = (height - odstep_od_krawedzi) / scale;
+		cornerPoints[2].x = (width - odstep_od_krawedzi) / scale;
+		cornerPoints[2].y = odstep_od_krawedzi / scale;
+		cornerPoints[3].x = (width - odstep_od_krawedzi) / scale;
+		cornerPoints[3].y = (height - odstep_od_krawedzi) / scale;
 	}
 	else if (how_many_points_points == 5) {
 		//wartosci staralem sie obliczyc na kartce bo nie mia³em pojêcia jak ustaliæ ich koordynaty.
 		cornerPoints[0].x = (width / 2) / scale;
-		cornerPoints[0].y = 50 / scale;
+		cornerPoints[0].y = odstep_od_krawedzi / scale;
 
 		cornerPoints[1].x = 137 / scale;
 		cornerPoints[1].y = 241 / scale;
 
 		cornerPoints[2].x = ((width / 2) - 162.5) / scale;
-		cornerPoints[2].y = (height - 50) / scale;
+		cornerPoints[2].y = (height - odstep_od_krawedzi) / scale;
 
 		cornerPoints[3].x = ((width / 2) + 162.5) / scale;
-		cornerPoints[3].y = (height - 50) / scale;
+		cornerPoints[3].y = (height - odstep_od_krawedzi) / scale;
 
 		cornerPoints[4].x = (width - 137) / scale;
 		cornerPoints[4].y = 241 / scale;
 	}
 }
 
-int get_random_point(int how_many_points_points, int last_selected) {
+int get_random_point(int how_many_points, int last_selected) {
 	int random_point = -1;
-	if (how_many_points_points <= 3 || how_many_points_points >= 5) {
-		random_point = rand() % how_many_points_points;
+	if (how_many_points <= 3 || how_many_points >= 5) {
+		random_point = rand() % how_many_points;
 		return random_point;
 	}
 	else if (how_many_points == 4) {
@@ -99,7 +105,6 @@ void display_points(int how_many_points, int divide_distance_by) {
 		x = x - (x - cornerPoints[which_point].x) / divide_distance_by;
 		y = y - (y - cornerPoints[which_point].y) / divide_distance_by;
 		last_point = which_point;
-		Sleep(1000);
 	}
 	SDL_DestroyRenderer(renderer);
 	SDL_DestroyWindow(window);
