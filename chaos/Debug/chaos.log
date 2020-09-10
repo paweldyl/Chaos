@@ -1,2 +1,36 @@
-﻿  main.c
+﻿  funkcje.c
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(17,42): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(18,43): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(21,42): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(22,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(23,42): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(24,60): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(27,42): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(28,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(29,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(30,60): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(31,59): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(32,60): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(35,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(36,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(37,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(38,60): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(39,59): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(40,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(41,59): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(42,60): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(46,42): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(47,49): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(49,34): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(50,34): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(52,52): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(53,60): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(55,52): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(56,60): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(58,44): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(59,34): warning C4244: "=": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(83,11): warning C4098: "display_points": funkcja "void" zwraca wartość
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(78,1): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(79,1): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\hakir\source\repos\chaos\chaos\deps\include\funkcje.c(75): warning C4715: "get_random_point”: niewszystkie ścieżki kodu zwracają wartość
   chaos.vcxproj -> C:\Users\hakir\source\repos\chaos\Debug\chaos.exe
